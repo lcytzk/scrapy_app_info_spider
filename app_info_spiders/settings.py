@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for dataanalysis project
+# Scrapy settings for app_info_spiders project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,16 +9,16 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'dataanalysis'
+BOT_NAME = 'app_info_spiders'
 
-SPIDER_MODULES = ['dataanalysis.spiders']
-NEWSPIDER_MODULE = 'dataanalysis.spiders'
-DUPEFILTER_CLASS = 'dataanalysis.urlfilter.URLFilter'
+SPIDER_MODULES = ['app_info_spiders.spiders']
+NEWSPIDER_MODULE = 'app_info_spiders.spiders'
+DUPEFILTER_CLASS = 'app_info_spiders.urlfilter.URLFilter'
 DOWNLOAD_DELAY = 3
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'dataanalysis (+http://www.yourdomain.com)'
+#USER_AGENT = 'app_info_spiders (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -55,7 +55,7 @@ SPIDER_MIDDLEWARES = {
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'dataanalysis.middlewares.MyCustomDownloaderMiddleware': 543,
+#    'app_info_spiders.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -67,7 +67,7 @@ SPIDER_MIDDLEWARES = {
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'dataanalysis.pipelines.AppInfoPipeline': 300,
+    'app_info_spiders.pipelines.AppInfoPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

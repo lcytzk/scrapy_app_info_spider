@@ -1,9 +1,9 @@
 from scrapy.spiders import CrawlSpider
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import Rule
-from dataanalysis.items import AppItem
-from dataanalysis.wandoujiaApi import WdjApiService
-from dataanalysis import dbconnection
+from app_info_spiders.items import AppItem
+from app_info_spiders.wandoujiaApi import WdjApiService
+from app_info_spiders import dbconnection
 
 def loadPackages():
     db = dbconnection.getConnection()
